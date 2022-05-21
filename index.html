@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="flex">
+	<label>ID студента:<input type="text" class="input"></label>
+	<input type="button" value="Увійти" class="myButton">
+	</div>
+
+	<script type="text/javascript">
+		inp = document.querySelector(".input");
+		btn = document.querySelector(".myButton");
+		
+
+		btn.onclick = function(){
+			let value = inp.value
+			localStorage.setItem('input', value);
+			window.location.href = '1.html';
+		}
+	</script>
+</body>
+</html>
